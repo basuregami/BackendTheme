@@ -52,9 +52,11 @@
     </style>
 </head>
 <body>
-<P> @if(isset($error)) {{$error}} @endif </P>
+<!-- <P> @if(isset($error)) {{$error}} @endif </P>
 <h1>{{ trans('http.404.title') }}</h1>
-<p>{{ trans('http.404.description') }}</p>
+<p>{{ trans('http.404.description') }}</p> -->
+<h2> Access Denied</h2>
+<h3>Please contact administrator for assistance.</h3>
 </body>
 </html>
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->

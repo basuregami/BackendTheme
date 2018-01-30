@@ -21,11 +21,8 @@
     @yield('before-styles')
 
 
-    <link href="{{asset('backend_theme/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('backend_theme/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
-
-    <link href="{{asset('backend_theme/css/animate.css')}}" rel="stylesheet">
-    <link href="{{asset('backend_theme/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     {{--css style after loading common css--}}
     @yield('after-styles')
@@ -59,14 +56,7 @@
 <!-- JavaScripts -->
 @yield('before-scripts')
 {{--commond css styling--}}
-<script src="{{asset('backend_theme/js/jquery-3.1.1.min.js')}}"></script>
-<script src="{{asset('backend_theme/js/bootstrap.js')}}"></script>
-<script src="{{asset('backend_theme/js/plugins/metisMenu/jquery.metisMenu.js')}}"></script>
-<script src="{{asset('backend_theme/js/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
-
-<!-- Custom and plugin javascript -->
-<script src="{{asset('backend_theme/js/inspinia.js')}}"></script>
-<script src="{{asset('backend_theme/js/plugins/pace/pace.min.js')}}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 <script type="text/javascript">
     $.ajaxSetup({
         headers: {
