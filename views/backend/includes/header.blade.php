@@ -43,8 +43,7 @@
                                         </form>
                                     </li>
                                     <li>
-                                    @inject('Crypt','Illuminate\Support\Facades\Crypt')
-                                         <a href=" {{route('users.update.password', Crypt::encrypt(['id' => Auth::user()->id]) ) }}" title="Edit" class="passwordUpdate" btn-value="'.$user->id.'">Change Password </a>
+                                         <a href=" {{route('users.update.password') }}" title="Edit" class="passwordUpdate" btn-value="'.$user->id.'">Change Password </a>
                                     </li>
                                     <li>
                                         <a href="{{route('user.profile')}}" title="profile" class="profileUpdate">Profile</a>
